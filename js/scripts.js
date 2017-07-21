@@ -1,13 +1,23 @@
 //Business logic:
 function Pizza (size, toppings, additionalToppings) {
   this.size = size;
+  this.price = price;
   this.toppings = [];
 }
 
-// Pizza.prototype.cost = function() {
-//   return this.size + this.toppings;
-// }
+Pizza.prototype.price = function() {
+  If (this.size === "Large") {
+    return pizzaBasePrice = 20;
+  } if (this.size === "Medium") {
+    return pizzaBasePrice = 15;
+  } if (this.size === "Small") {
+    return pizzaBasePrice = 10;
+  }
+}
+
+
 var newPizza;
+
 
 //UI logic:
 $(document).ready(function() {
