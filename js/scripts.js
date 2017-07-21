@@ -1,3 +1,15 @@
+//Business logic:
+function Pizza (size, toppings) {
+  this.size = size;
+  this.toppings = toppings;
+}
+
+// Pizza.prototype.cost = function() {
+//   return this.size + this.toppings;
+// }
+
+
+//UI logic:
 $(document).ready(function() {
   $("#more-toppings").click(function() {
     $("#add-toppings").append('<div class="add-toppings">' +
@@ -27,6 +39,5 @@ $(document).ready(function() {
                                   '</label>' +
                                 '</div>' +
                               '</div>');
-
   });
 });
