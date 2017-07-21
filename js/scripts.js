@@ -23,6 +23,10 @@ Pizza.prototype.toppingsPrice = function() {
   }
 }
 
+Pizza.prototype.totalPrice = function() {
+  return basePrice() + totalToppingsPrice;
+}
+
 
 var newPizza;
 var pizzaBasePrice;
