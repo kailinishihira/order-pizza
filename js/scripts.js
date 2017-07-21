@@ -54,6 +54,7 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
     $(".size-ordered").text(newPizza.size);
     $(".toppings-ordered").text(newPizza.toppings);
+    $(".order-total").text(newPizza.basePrice());
 
     // newPizza.toppings.push(inputPizzaToppings);
   //   // });
