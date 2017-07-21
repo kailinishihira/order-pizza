@@ -5,7 +5,7 @@ function Pizza (size, toppings, additionalToppings) {
   this.toppings = [];
 }
 
-Pizza.prototype.price = function() {
+Pizza.prototype.basePrice = function() {
   If (this.size === "Large") {
     return pizzaBasePrice = 20;
   } if (this.size === "Medium") {
@@ -15,8 +15,17 @@ Pizza.prototype.price = function() {
   }
 }
 
+var toppings = [];
+var totalToppingsPrice;
+Pizza.prototype.toppingsPrice = function() {
+  toppings.forEach(topping) {
+    totalToppingsPrice += 1;
+  }
+}
+
 
 var newPizza;
+var pizzaBasePrice;
 
 
 //UI logic:
