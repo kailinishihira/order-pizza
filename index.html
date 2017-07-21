@@ -25,57 +25,63 @@
       <h2>Order Your Pizza</h2>
 
       <form id="pizza-order">
-        <h3>Choose your size:</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="pizza-size" value="small">
-            Small
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="pizza-size" value="small">
-            Medium
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="pizza-size" value="small">
-            Large
-          </label>
+        <div id="choose-size">
+          <h3>Choose your size:</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="pizza-size" value="small">
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="pizza-size" value="small">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="pizza-size" value="small">
+              Large
+            </label>
+          </div>
         </div>
 
-        <h3>Choose your toppings.</h3>
-        <h4>Each topping is an additional $1.</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="pepperoni">
-            Pepperoni
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="mushrooms">
-            Mushrooms
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="bacon">
-            Bacon
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="anchovies">
-            Anchovies
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="extra-cheese">
-            Extra-cheese
-          </label>
+        <div id="add-toppings">
+          <h3>Choose your toppings.</h3>
+          <h4>Each topping is an additional $1.</h4>
+          <div class="add-toppings">
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="pepperoni">
+                Pepperoni
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="mushrooms">
+                Mushrooms
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="bacon">
+                Bacon
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="anchovies">
+                Anchovies
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="extra-cheese">
+                Extra-cheese
+              </label>
+            </div>
+          </div>
         </div>
 
         <span class="btn btn-info" id="more-toppings">Add more toppings</span>
