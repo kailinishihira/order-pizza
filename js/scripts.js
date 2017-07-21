@@ -1,7 +1,7 @@
 //Business logic:
 function Pizza (size, toppings, additionalToppings) {
   this.size = size;
-  this.toppings = toppings;
+  this.toppings = [];
 }
 
 // Pizza.prototype.cost = function() {
@@ -45,8 +45,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputPizzaSize = $("input:radio[name=pizza-size]:checked").val();
-    var inputPizzaToppings = $("input:radio[name=toppings]:checked").val();
+    // $(".add-toppings").each(function() {
+    var inputPizzaToppings = $(this).find("input:radio[name=toppings]:checked").val();
     var newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
+    newPizza.toppings.push(inputPizzaToppings);
+    });
+
 
 
 
