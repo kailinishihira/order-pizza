@@ -58,7 +58,10 @@ $(document).ready(function() {
       var inputToppings = $(this).children("#toppings").val();
       newPizza.toppings.push(inputToppings);
 
+    var userName = $("#new-name").val();
+
     $("#order-details").show();
+    $(".user-name").text(userName);
     $(".size-ordered").text(newPizza.size);
     $(".toppings-ordered").text(newPizza.toppings.toString());
     $(".order-total").text(newPizza.basePrice());
