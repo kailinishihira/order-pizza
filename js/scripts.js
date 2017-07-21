@@ -3,37 +3,41 @@ function Pizza (size) {
   this.size = size;
   this.toppings = [];
 }
-//
-// var pizzaBasePrice;
-//
+
 Pizza.prototype.basePrice = function() {
   if (this.size === "Small") {
-    return 10;
+    return 12;
   } if (this.size === "Medium") {
-    return 15;
+    return 18;
   } if (this.size === "Large") {
-    return 20;
+    return 25;
   }
 }
 
-// var toppings = [];
-// var totalToppingsPrice;
 // Pizza.prototype.toppingsPrice = function() {
-//   forEach(toppings) {
-//     totalToppingsPrice += 1;
+//   if (this.toppings === "Pepperoni") {
+//     return 1;
 //   }
 // }
+// var allToppingsPrices = [];
+// Pizza.prototype.toppingsPrice = function() {
+//   for (var i = 0; i < this.toppings.length; i++) {
+//       this.toppings[i] = 1
+//       allToppingsPrices.push(this.toppings[i]);
+//     }
+//   }
 //
-// Pizza.prototype.totalPrice = function() {
-//   return pizzaBasePrice + totalToppingsPrice;
-// }
-//
-var newPizza;
+// var totalToppingsPrice;
+// allToppingsPrices.forEach(function(allToppingPrice) {
+//   totalToppingsPrice += allToppingPrice;
+// });
+
+// var newPizza;
 
 //UI logic:
 $(document).ready(function() {
   $("#more-toppings").click(function() {
-    $("#add-toppings").append('<h3>Additional Toppings</h3>' +
+    $("#add-toppings").append('<h3>Additional Toppings:</h3>' +
                                 '<div class="add-toppings">' +
                                   '<select class="form-control" id="toppings">' +
                                     '<option value="Pepperoni">Pepperoni</option>' +
@@ -54,14 +58,10 @@ $(document).ready(function() {
       var inputToppings = $(this).children("#toppings").val();
       newPizza.toppings.push(inputToppings);
 
-
-
-
+    $("#order-details").show();
     $(".size-ordered").text(newPizza.size);
     $(".toppings-ordered").text(newPizza.toppings.toString());
     $(".order-total").text(newPizza.basePrice());
-
-    // newPizza.toppings.push(inputPizzaToppings);
     });
   });
   //
