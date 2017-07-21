@@ -14,11 +14,14 @@ Pizza.prototype.basePrice = function() {
   }
 }
 
-// Pizza.prototype.toppingsPrice = function() {
-//   if (this.toppings === "Pepperoni") {
-//     return 1;
-//   }
-// }
+function reset() {
+$("#pizza-size").val("");
+$("#toppings").val("");
+$("#new-name").val("");
+$("#new-email").val("");
+$("#new-phone").val("");
+}
+
 // var allToppingsPrices = [];
 // Pizza.prototype.toppingsPrice = function() {
 //   for (var i = 0; i < this.toppings.length; i++) {
@@ -26,18 +29,12 @@ Pizza.prototype.basePrice = function() {
 //       allToppingsPrices.push(this.toppings[i]);
 //     }
 //   }
-//
-// var totalToppingsPrice;
-// allToppingsPrices.forEach(function(allToppingPrice) {
-//   totalToppingsPrice += allToppingPrice;
-// });
-
 // var newPizza;
 
 //UI logic:
 $(document).ready(function() {
   $("#more-toppings").click(function() {
-    $("#add-toppings").append('<h3>Additional Toppings:</h3>' +
+    $("#add-toppings").append('<h2>Additional Free Toppings:</h2>' +
                                 '<div class="add-toppings">' +
                                   '<select class="form-control" id="toppings">' +
                                     '<option value="Pepperoni">Pepperoni</option>' +
@@ -65,48 +62,7 @@ $(document).ready(function() {
     $(".size-ordered").text(newPizza.size);
     $(".toppings-ordered").text(newPizza.toppings.toString());
     $(".order-total").text(newPizza.basePrice());
-
-
     });
-    $("#pizza-size").val("");
-    $("#toppings").val("");
-    $("#new-name").val("");
-    $("#new-email").val("");
-    $("#new-phone").val("");
+    reset();
   });
-
-  //
-  // $(".size-ordered").text(newPizza.size());
-  //   newPizza.toppings.forEach(function() {
-  //   $(".toppings-ordered").append("<li>" + newPizza.toppings + "</li>");
-  // });
 });
-
-
-// '<div class="add-toppings">' +
-//   '<div class="radio">' +
-//     '<label>' +
-//       '<input type="radio" name="toppings" value="pepperoni">Pepperoni' +
-//     '</label>' +
-//   '</div>' +
-//   '<div class="radio">' +
-//     '<label>' +
-//       '<input type="radio" name="toppings" value="mushrooms">Mushrooms' +
-//     '</label>' +
-//   '</div>' +
-//   '<div class="radio">' +
-//     '<label>' +
-//       '<input type="radio" name="toppings" value="bacon">Bacon'+
-//     '</label>' +
-//   '</div>' +
-//   '<div class="radio">' +
-//     '<label>' +
-//       '<input type="radio" name="toppings" value="anchovies">Anchovies' +
-//     '</label>' +
-//   '</div>' +
-//   '<div class="radio">' +
-//     '<label>' +
-//       '<input type="radio" name="toppings" value="extra-cheese">Extra-cheese' +
-//     '</label>' +
-//   '</div>' +
-// '</div>');
