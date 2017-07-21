@@ -1,36 +1,34 @@
-//Business logic:
-function Pizza (size, toppings, additionalToppings) {
+// //Business logic:
+function Pizza (size, toppings) {
   this.size = size;
-  this.price = price;
-  this.toppings = [];
+  this.toppings = toppings;
 }
-
+//
+// var pizzaBasePrice;
+//
 Pizza.prototype.basePrice = function() {
-  If (this.size === "Large") {
-    return pizzaBasePrice = 20;
+  if (this.size === "Small") {
+    return pizzaBasePrice = 10;
   } if (this.size === "Medium") {
     return pizzaBasePrice = 15;
-  } if (this.size === "Small") {
-    return pizzaBasePrice = 10;
+  } if (this.size === "Large") {
+    return pizzaBasePrice = 20;
   }
 }
-
-var toppings = [];
-var totalToppingsPrice;
-Pizza.prototype.toppingsPrice = function() {
-  toppings.forEach(topping) {
-    totalToppingsPrice += 1;
-  }
-}
-
-Pizza.prototype.totalPrice = function() {
-  return basePrice() + totalToppingsPrice;
-}
-
-
-var newPizza;
-var pizzaBasePrice;
-
+//
+// var toppings = [];
+// var totalToppingsPrice;
+// Pizza.prototype.toppingsPrice = function() {
+//   forEach(toppings) {
+//     totalToppingsPrice += 1;
+//   }
+// }
+//
+// Pizza.prototype.totalPrice = function() {
+//   return pizzaBasePrice + totalToppingsPrice;
+// }
+//
+// var newPizza;
 
 //UI logic:
 $(document).ready(function() {
@@ -50,15 +48,14 @@ $(document).ready(function() {
     debugger;
     event.preventDefault();
     var inputPizzaSize = $("#pizza-size").val();
-  //   // $(".add-toppings").each(function() {
-    var inputPizzaToppings = $(this).find(".add-toppings").val();
-    var allToppings = [];
-    allToppings.push(inputPizzaToppings);
+    // $(".add-toppings").each(function() {
+    var inputPizzaToppings = $("#toppings").val();
+      // toppings.push(inputPizzaToppings);
+    var newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
+    $(".size-ordered").text(newPizza.size);
+    $(".toppings-ordered").text(newPizza.toppings);
 
-    $(".size-ordered").text(inputPizzaSize);
-    $(".toppings-ordered").text(allToppings);
-  //   newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
-  //   newPizza.toppings.push(inputPizzaToppings);
+    // newPizza.toppings.push(inputPizzaToppings);
   //   // });
   });
   //
