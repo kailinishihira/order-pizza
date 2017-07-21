@@ -9,6 +9,7 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
     <title>Momo's Pizza</title>
   </head>
   <body>
@@ -23,27 +24,10 @@
 
 
       <div class="row">
-        <form id="pizza-order">
-          <div class="col-md-6">
-            <div class="contact-info">
-              <h3>Contact Information</h3>
-              <div class="form-group">
-                <label for="new-name">Name:</label>
-                <input type="text" class="form control" id="new-name">
-              </div>
-              <div class="form-group">
-                <label for="new-email">Email:</label>
-                <input type="text" class="form control" id="new-email">
-              </div>
-              <div class="form-group">
-                <label for="new-phone">Phone Number:</label>
-                <input type="text" class="form control" id="new-phone">
-              </div>
-            </div>
-          </div>
+        <h2>Order Form</h2>
+        <div class="col-md-5">
+          <form id="pizza-order">
 
-          <div class="col-md-6">
-            <h2>Order Your Pizza</h2>
             <div id="choose-size">
               <h3>Choose your size:</h3>
               <select class="form-control" id="pizza-size">
@@ -65,22 +49,43 @@
                 </select>
               </div>
             </div>
+
+            <span class="btn btn-info" id="more-toppings">Add more toppings</span>
+
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="form-group">
+                <label for="new-name">Name:</label>
+                <input type="text" class="form control" id="new-name">
+              </div>
+              <div class="form-group">
+                <label for="new-email">Email:</label>
+                <input type="text" class="form control" id="new-email">
+              </div>
+              <div class="form-group">
+                <label for="new-phone">Phone Number:</label>
+                <input type="text" class="form control" id="new-phone">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-danger">Submit Order</button>
+          </form>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-5">
+          <div id="order-details">
+            <h3>Order Confirmation</h3>
+            <h4><span class="user-name"></span>, your order will be ready for pick-up in 20 minutes.</h4>
+            <ul>
+              <li>Pizza Size: <span class="size-ordered"></span></li>
+              <li>Toppings: <span class="toppings-ordered"></span></li>
+              <li>Total: $<span class="order-total"></span></li>
+            </ul>
           </div>
-
-          <button type="submit" class="btn btn-danger">Submit Order</button>
-          <span class="btn btn-info" id="more-toppings">Add more toppings</span>
-
-        </form>
-      </div>
-
-      <div id="order-details">
-        <h3>Order Confirmation</h3>
-        <h4><span class="user-name"></span>, your order will be ready in 20 minutes.</h4>
-        <ul>
-          <li>Pizza Size: <span class="size-ordered"></span></li>
-          <li>Toppings: <span class="toppings-ordered"></span></li>
-          <li>Total: $<span class="order-total"></span></li>
-        </ul>
+        </div>
       </div>
 
     </div>

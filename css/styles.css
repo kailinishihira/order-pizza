@@ -1,12 +1,18 @@
 body {
   background-image: url(../img/pizza-background.jpg);
   background-repeat: repeat;
+  margin: 0;
 }
 
 .jumbotron {
-  background-color: transparent;
-  opacity: -10%;
+  background-color: rgba(255,255,255, 0.5);
   text-align: center;
+}
+
+.jumbotron h1 {
+  font-family: 'Lemonada', cursive;
+  font-size: 100px;
+  letter-spacing: 6px;
 }
 
 #order-details {
@@ -14,6 +20,13 @@ body {
 }
 
 .btn {
-  float: right;
   margin: 20px;
+}
+
+.row {
+  background-color: white;
+}
+
+.row h2 {
+  text-align: center;
 }
