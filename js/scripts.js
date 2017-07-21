@@ -40,6 +40,11 @@ $(document).ready(function() {
                                     '<option value="Pepperoni">Pepperoni</option>' +
                                     '<option value="Mushrooms">Mushrooms</option>' +
                                     '<option value="Bacon">Bacon</option>' +
+                                    '<option value="Pineapple">Pineapple</option>' +
+                                    '<option value="Ham">Ham</option>' +
+                                    '<option value="Garlic">Garlic</option>' +
+                                    '<option value="Onions">Onion</option>' +
+                                    '<option value="Basil">Basil</option>' +
                                     '<option value="Anchovies">Anchovies</option>' +
                                     '<option value="Extra Cheese">Extra Cheese</option>' +
                                   '</select>');
