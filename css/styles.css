@@ -16,6 +16,10 @@ font-family: 'Zilla Slab', serif;
   letter-spacing: 6px;
 }
 
+#contact-us {
+  text-align: center;
+}
+
 #order-details {
   display: none;
 }
