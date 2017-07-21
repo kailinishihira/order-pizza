@@ -1,7 +1,7 @@
 // //Business logic:
-function Pizza (size, toppings) {
+function Pizza (size) {
   this.size = size;
-  this.toppings = toppings;
+  this.toppings = [];
 }
 //
 // var pizzaBasePrice;
@@ -28,7 +28,7 @@ Pizza.prototype.basePrice = function() {
 //   return pizzaBasePrice + totalToppingsPrice;
 // }
 //
-// var newPizza;
+var newPizza;
 
 //UI logic:
 $(document).ready(function() {
@@ -48,12 +48,17 @@ $(document).ready(function() {
     debugger;
     event.preventDefault();
     var inputPizzaSize = $("#pizza-size").val();
-    $("#toppings").each(function() {
-    var inputPizzaToppings = $("#toppings").val();
-      // toppings.push(inputPizzaToppings);
-    var newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
+    var newPizza = new Pizza(inputPizzaSize);
+
+    $(".add-toppings").each(function() {
+      var inputToppings = $(this).children("#toppings").val();
+      newPizza.toppings.push(inputToppings);
+
+
+
+
     $(".size-ordered").text(newPizza.size);
-    $(".toppings-ordered").text(newPizza.toppings);
+    $(".toppings-ordered").text(newPizza.toppings.toString());
     $(".order-total").text(newPizza.basePrice());
 
     // newPizza.toppings.push(inputPizzaToppings);
