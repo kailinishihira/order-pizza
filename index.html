@@ -27,7 +27,12 @@
       <form id="pizza-order">
         <div id="choose-size">
           <h3>Choose your size:</h3>
-          <div class="radio">
+          <select class="form-control" id="pizza-size">
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+          </select>
+          <!-- <div class="radio">
             <label>
               <input type="radio" name="pizza-size" value="small">
               Small
@@ -44,14 +49,24 @@
               <input type="radio" name="pizza-size" value="large">
               Large
             </label>
-          </div>
+          </div> -->
         </div>
 
         <div id="add-toppings">
           <h3>Choose your toppings.</h3>
           <h4>Each topping is an additional $1.</h4>
           <div class="add-toppings">
-            <div class="radio">
+            <select class="form-control" id="toppings">
+              <option value="1">Pepperoni</option>
+              <option value="2">Mushrooms</option>
+              <option value="3">Bacon</option>
+              <option value="4">Anchovies</option>
+              <option value="5">Extra Cheese</option>
+            </select>
+
+
+
+            <!-- <div class="radio">
               <label>
                 <input type="radio" name="toppings" value="pepperoni">
                 Pepperoni
@@ -80,7 +95,7 @@
                 <input type="radio" name="toppings" value="extra-cheese">
                 Extra-cheese
               </label>
-            </div>
+            </div> -->
           </div>
         </div>
 
