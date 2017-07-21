@@ -11,9 +11,11 @@
 
 | Behavior  | Input  | Output  |
 |---|---|---|
-| User selects pizza size from drop down menu  | Large Pizza | Large Pizza  |
-|  User selects additional toppings for pizza | Cheese and Pepperoni  |  Large Pizza with Cheese and Pepperoni |
-| User finalizes order | Submit  | Large Pizza with Cheese and Pepperoni. Your total will be $18.00  |
+| User selects pizza size from drop down menu  | Large pizza | Large pizza  |
+|  User selects toppings for pizza | Pepperoni  |  Large Pizza with pepperoni |
+| User wishes to select additional toppings | Clicks button for additional toppings | Drop down menu appends to the previous toppings menu |
+| User selects additional toppings | Extra cheese | Large pizza with pepperoni and extra cheese |
+| User finalizes order | Submit  | Confirms order. Large pizza with pepperoni and extra cheese. Your total will be $25.00 |
 
 
 ## Setup/Installation Requirements
