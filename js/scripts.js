@@ -1,5 +1,5 @@
 //Business logic:
-function Pizza (size, toppings) {
+function Pizza (size, toppings, additionalToppings) {
   this.size = size;
   this.toppings = toppings;
 }
@@ -40,4 +40,16 @@ $(document).ready(function() {
                                 '</div>' +
                               '</div>');
   });
+
+  $("form#pizza-order").submit(function(event) {
+    event.preventDefault();
+
+    var inputPizzaSize = $("input:radio[name=pizza-size]:checked").val();
+    var inputPizzaToppings = $("input:radio[name=toppings]:checked").val();
+    var newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
+
+
+
+  });
+
 });
