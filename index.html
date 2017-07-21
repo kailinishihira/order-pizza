@@ -19,7 +19,6 @@
       <div class="about-pizza">
         <h2>Welcome to Momo's Pizza!</h2>
         <p>Pizzas are made-to-order. All pizzas are topped with our original tomato based sauce and mozzarella cheese. </p>
-
       </div>
 
       <h2>Order Your Pizza</h2>
@@ -32,24 +31,6 @@
             <option value="2">Medium</option>
             <option value="3">Large</option>
           </select>
-          <!-- <div class="radio">
-            <label>
-              <input type="radio" name="pizza-size" value="small">
-              Small
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pizza-size" value="medium">
-              Medium
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pizza-size" value="large">
-              Large
-            </label>
-          </div> -->
         </div>
 
         <div id="add-toppings">
@@ -63,39 +44,6 @@
               <option value="4">Anchovies</option>
               <option value="5">Extra Cheese</option>
             </select>
-
-
-
-            <!-- <div class="radio">
-              <label>
-                <input type="radio" name="toppings" value="pepperoni">
-                Pepperoni
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="toppings" value="mushrooms">
-                Mushrooms
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="toppings" value="bacon">
-                Bacon
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="toppings" value="anchovies">
-                Anchovies
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="toppings" value="extra-cheese">
-                Extra-cheese
-              </label>
-            </div> -->
           </div>
         </div>
 
@@ -104,10 +52,67 @@
         <button type="submit" class="btn btn-danger">Submit Order</button>
       </form>
 
-      <div class="order-details">
-
+      <div id="order-details">
+        <h3>Order Confirmation</h3>
+        <ul>
+          <li>Pizza Size: <span class="size-ordered"></span></li>
+          <li>Toppings: <span class="toppings-ordered"></span></li>
+          <li>Total due: $<span class="order-total"></span></li>
+        </ul>
       </div>
 
     </div>
   </body>
 </html>
+
+<!-- <div class="radio">
+  <label>
+    <input type="radio" name="pizza-size" value="small">
+    Small
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="pizza-size" value="medium">
+    Medium
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="pizza-size" value="large">
+    Large
+  </label>
+</div> -->
+
+
+
+<!-- <div class="radio">
+  <label>
+    <input type="radio" name="toppings" value="pepperoni">
+    Pepperoni
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="toppings" value="mushrooms">
+    Mushrooms
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="toppings" value="bacon">
+    Bacon
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="toppings" value="anchovies">
+    Anchovies
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="toppings" value="extra-cheese">
+    Extra-cheese
+  </label>
+</div> -->

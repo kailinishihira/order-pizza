@@ -26,9 +26,9 @@ $(document).ready(function() {
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();
 
-    var inputPizzaSize = $("input:radio[name=pizza-size]:checked").val();
+    var inputPizzaSize = $("#pizza-size").val();
     // $(".add-toppings").each(function() {
-    var inputPizzaToppings = $(this).find("input:radio[name=toppings]:checked").val();
+    var inputPizzaToppings = $(this).find("#toppings").val();
     var newPizza = new Pizza(inputPizzaSize, inputPizzaToppings);
     newPizza.toppings.push(inputPizzaToppings);
     // });
