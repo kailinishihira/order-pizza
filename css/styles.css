@@ -1,3 +1,19 @@
+body {
+  background-image: url(../img/pizza-background.jpg);
+  background-repeat: repeat;
+}
+
+.jumbotron {
+  background-color: transparent;
+  opacity: -10%;
+  text-align: center;
+}
+
 #order-details {
   display: none;
+}
+
+.btn {
+  float: right;
+  margin: 20px;
 }

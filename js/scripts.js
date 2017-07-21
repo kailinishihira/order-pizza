@@ -65,8 +65,16 @@ $(document).ready(function() {
     $(".size-ordered").text(newPizza.size);
     $(".toppings-ordered").text(newPizza.toppings.toString());
     $(".order-total").text(newPizza.basePrice());
+
+
     });
+    $("#pizza-size").val("");
+    $("#toppings").val("");
+    $("#new-name").val("");
+    $("#new-email").val("");
+    $("#new-phone").val("");
   });
+
   //
   // $(".size-ordered").text(newPizza.size());
   //   newPizza.toppings.forEach(function() {
